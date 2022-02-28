@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { makeApiCall } from './actions';
+import { makeApiCall } from './../actions/';
 
 class Headlines extends React.Component {
   constructor(props) {
@@ -47,4 +47,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default Headlines
+export default connect(mapStateToProps)(Headlines);
